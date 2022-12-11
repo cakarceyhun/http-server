@@ -15,7 +15,7 @@ project(http_server)
 set(LIBRARY_OUTPUT_PATH "${CMAKE_SOURCE_DIR}/lib")
 
 # Add project executable
-add_executable(server src/main.cpp)
+add_executable(server src/main.cpp src/Socket.cpp)
 
 target_link_libraries(server PUBLIC pthread)
 
